@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Política de privacidad oficial de SintaxisMD. Privacy Policy.">
+<meta name="theme-color" content="#101827">
+<title>Privacy Policy | SintaxisMD</title>
+<style>
+:root {
+  --bg:#101827;
+  --panel:#182438;
+  --text:#edf3fb;
+  --muted:#aab8cc;
+  --accent:#45d6ad;
+  --line:#2b3b52;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.75;
+}
+header {
+  padding:65px 20px 45px;
+  text-align:center;
+  background:radial-gradient(ellipse at top,#244b57,#101827 70%);
+  border-bottom:1px solid var(--line);
+}
+.logo {
+  display:inline-block;
+  padding:9px 17px;
+  border:1px solid #45d6ad66;
+  border-radius:12px;
+  color:var(--accent);
+  font-weight:bold;
+  letter-spacing:2px;
+}
+h1 {font-size:clamp(32px,6vw,48px);margin:20px 0 5px}
+header p {color:var(--muted);margin:5px}
+.container {max-width:900px;margin:35px auto;padding:0 20px}
+.toolbar {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:25px;
+}
+button {
+  background:var(--panel);
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:9px;
+  padding:11px 23px;
+  cursor:pointer;
+  font-size:15px;
+}
+button.active {
+  background:var(--accent);
+  color:#09251e;
+  border-color:var(--accent);
+  font-weight:bold;
+}
+.card {
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:30px;
+  margin-bottom:20px;
+}
+h2 {font-size:21px;color:var(--accent);margin-top:28px}
+h2:first-child {margin-top:0}
+p,li {color:#d2dbea}
+li {margin-bottom:7px}
+.muted {color:var(--muted);font-size:14px}
+a {color:var(--accent);text-decoration:none}
+a:hover {text-decoration:underline}
+footer {
+  text-align:center;
+  padding:35px 15px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  font-size:14px;
+}
+[hidden] {display:none!important}
+@media(max-width:600px) {
+  header {padding:45px 15px 30px}
+  .card {padding:20px}
+  .toolbar button {flex:1;padding:10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SINTAXISMD</div>
+  <h1>Privacy & Data Protection</h1>
+  <p>Your documents. Your control.</p>
+  <p>Tus documentos. Tu control.</p>
+</header>
+
+<main class="container">
+
+<div class="toolbar">
+  <button id="esBtn" class="active" onclick="setLanguage('es')">Español</button>
+  <button id="enBtn" onclick="setLanguage('en')">English</button>
+</div>
+
+<section id="spanish">
+<div class="card">
+<h2>Política de privacidad</h2>
+<p><strong>Aplicación:</strong> SintaxisMD</p>
+<p><strong>Versión:</strong> 1.0.0</p>
+<p><strong>Titular:</strong> Roman Zamora</p>
+<p><strong>País:</strong> Nicaragua</p>
+<p><strong>Contacto:</strong>
+<a href="mailto:romanzamora10@hotmail.com">romanzamora10@hotmail.com</a></p>
+<p><strong>Última actualización:</strong> 18 de noviembre de 2026</p>
+
+<h2>1. Introducción</h2>
+<p>Esta Política de Privacidad explica cómo SintaxisMD maneja la información y los documentos de sus usuarios.</p>
+<p>SintaxisMD es una aplicación de escritorio para Windows que permite crear, editar, visualizar y exportar documentos Markdown.</p>
+<p>La aplicación está diseñada para trabajar principalmente de forma local. No requiere crear una cuenta ni enviar documentos al desarrollador para utilizar sus funciones principales.</p>
+
+<h2>2. Información que recopilamos</h2>
+<p>SintaxisMD no incorpora mecanismos propios de recopilación externa de información personal.</p>
+<p>En particular, la aplicación no implementa:</p>
+<ul>
+<li>Registro de usuarios ni inicio de sesión.</li>
+<li>Recopilación de nombres, teléfonos o correos electrónicos.</li>
+<li>Telemetría o seguimiento del comportamiento.</li>
+<li>Publicidad o perfiles publicitarios.</li>
+<li>Servicios de analítica de uso.</li>
+<li>Envío automático de informes de errores al desarrollador.</li>
+<li>Transmisión de documentos a servidores propios.</li>
+</ul>
+<p>El usuario puede escribir información personal dentro de sus documentos. Esta información se procesa y guarda localmente mediante las funciones de edición y almacenamiento.</p>
+
+<h2>3. Almacenamiento local de documentos</h2>
+<p>Los documentos creados o editados se guardan en la ubicación seleccionada por el usuario en su equipo.</p>
+<p>SintaxisMD también conserva información de sesión para permitir la recuperación de las pestañas abiertas y del trabajo en curso.</p>
+<p>El archivo de sesión puede incluir:</p>
+<ul>
+<li>Texto de los documentos abiertos, incluso cambios todavía no guardados.</li>
+<li>Rutas de los archivos.</li>
+<li>Estado de las pestañas y selección.</li>
+<li>Preferencias de visualización, idioma y tema.</li>
+<li>Posición, tamaño y estado de la ventana.</li>
+</ul>
+<p>En las instalaciones tradicionales, este archivo se encuentra en:</p>
+<p><code>%APPDATA%\editor-md\session.json</code></p>
+<p>El archivo se almacena en formato JSON y no está cifrado por SintaxisMD. Por ello, la protección depende también de los permisos y de la seguridad de la cuenta y del dispositivo Windows.</p>
+
+<h2>4. Conexiones a Internet y servicios externos</h2>
+<p>Las funciones principales de SintaxisMD pueden utilizarse sin conexión a Internet.</p>
+<p>Sin embargo, existen dos situaciones en las que puede producirse tráfico externo:</p>
+<ul>
+<li><strong>Imágenes remotas:</strong> si un documento contiene una imagen alojada en una dirección HTTPS, la vista previa puede solicitarla al servidor que la aloja. Ese servidor podría recibir la dirección IP pública y datos técnicos habituales de la conexión.</li>
+<li><strong>Enlaces externos:</strong> cuando el usuario decide abrir un enlace HTTP o HTTPS, SintaxisMD lo entrega al navegador predeterminado del sistema.</li>
+</ul>
+<p>SintaxisMD no controla las prácticas de privacidad de los servidores externos ni de los sitios web visitados.</p>
+
+<h2>5. Servicios y bibliotecas de terceros</h2>
+<p>La aplicación utiliza tecnologías y bibliotecas incorporadas localmente, entre ellas:</p>
+<ul>
+<li>Electron para el entorno de escritorio.</li>
+<li>CodeMirror para la edición de texto.</li>
+<li>Marked para interpretar Markdown.</li>
+<li>DOMPurify para sanear el contenido HTML de la vista previa.</li>
+</ul>
+<p>La revisión del código no identificó SDK de publicidad, analítica, autenticación ni servicios de almacenamiento en la nube.</p>
+
+<h2>6. Cookies y almacenamiento web</h2>
+<p>El código propio de SintaxisMD no implementa el uso de cookies, localStorage, sessionStorage o IndexedDB como mecanismos de almacenamiento de datos del usuario.</p>
+<p>La aplicación utiliza el entorno de Electron/Chromium. La posible caché interna del navegador al cargar recursos remotos no fue determinada mediante pruebas dinámicas.</p>
+
+<h2>7. Cuentas, licencias y pagos</h2>
+<p>SintaxisMD no implementa cuentas de usuario, inicio de sesión, activación mediante claves, validación propia de licencias ni pagos dentro de la aplicación.</p>
+<p>Si la aplicación se adquiere mediante Microsoft Store, los procesos de compra, facturación y administración de la cuenta corresponden a Microsoft y se rigen por sus propias políticas.</p>
+
+<h2>8. Seguridad de la información</h2>
+<p>SintaxisMD incorpora medidas técnicas como aislamiento de contexto, ejecución restringida de código, validación de operaciones y saneamiento del contenido mostrado en la vista previa.</p>
+<p>No obstante, los documentos y el archivo de sesión no cuentan con cifrado propio de la aplicación. Recomendamos mantener actualizado Windows y proteger el acceso al dispositivo mediante las herramientas de seguridad disponibles.</p>
+
+<h2>9. Conservación y eliminación de datos</h2>
+<p>Los documentos permanecen en las ubicaciones elegidas por el usuario hasta que este decida eliminarlos.</p>
+<p>SintaxisMD no incluye actualmente una función para borrar todos los datos de la aplicación desde su interfaz.</p>
+<p>En la instalación tradicional NSIS, los datos de usuario se conservan al desinstalar. Para eliminarlos, el usuario debe cerrar la aplicación y borrar manualmente la carpeta:</p>
+<p><code>%APPDATA%\editor-md</code></p>
+<p>El comportamiento exacto de eliminación de datos al desinstalar la versión AppX de Microsoft Store no ha sido determinado en esta revisión.</p>
+<p>Si los documentos se guardan en carpetas sincronizadas, unidades de red o servicios de terceros, su sincronización y conservación dependen de esos servicios externos.</p>
+
+<h2>10. Privacidad de menores</h2>
+<p>SintaxisMD es una herramienta general de edición de documentos y no está diseñada específicamente para recopilar información de menores de 13 años.</p>
+<p>No implementa registro de edad ni mecanismos específicos de recopilación de datos infantiles.</p>
+
+<h2>11. Cambios en esta política</h2>
+<p>Esta política podrá actualizarse cuando se incorporen nuevas funciones o cambie el tratamiento de información de la aplicación. La versión vigente estará disponible en esta página.</p>
+
+<h2>12. Contacto</h2>
+<p>Para consultas relacionadas con esta Política de Privacidad o el tratamiento de información en SintaxisMD, puedes contactar con el titular:</p>
+<p><strong>Roman Zamora</strong><br>
+<a href="mailto:romanzamora10@hotmail.com">romanzamora10@hotmail.com</a></p>
+
+<h2>13. Alcance de esta política</h2>
+<p>Esta política describe las funciones de SintaxisMD verificadas mediante una revisión estática de su código y configuración. No sustituye las políticas de privacidad de Microsoft Windows, Microsoft Store, navegadores o servicios externos utilizados voluntariamente por el usuario.</p>
+</div>
+</section>
+
+<section id="english" hidden>
+<div class="card">
+<h2>Privacy Policy</h2>
+<p><strong>Application:</strong> SintaxisMD</p>
+<p><strong>Version:</strong> 1.0.0</p>
+<p><strong>Owner:</strong> Roman Zamora</p>
+<p><strong>Country:</strong> Nicaragua</p>
+<p><strong>Contact:</strong>
+<a href="mailto:romanzamora10@hotmail.com">romanzamora10@hotmail.com</a></p>
+<p><strong>Last updated:</strong> November 18, 2026</p>
+
+<h2>1. Introduction</h2>
+<p>This Privacy Policy explains how SintaxisMD handles users' information and documents.</p>
+<p>SintaxisMD is a Windows desktop application for creating, editing, viewing and exporting Markdown documents.</p>
+<p>The application is designed to work primarily locally. No account is required, and documents do not need to be sent to the developer to use its main features.</p>
+
+<h2>2. Information We Collect</h2>
+<p>SintaxisMD does not implement its own external personal information collection mechanisms.</p>
+<p>Specifically, the application does not implement:</p>
+<ul>
+<li>User registration or sign-in.</li>
+<li>Collection of names, phone numbers or email addresses.</li>
+<li>Telemetry or behavioral tracking.</li>
+<li>Advertising or advertising profiles.</li>
+<li>Usage analytics services.</li>
+<li>Automatic error reports sent to the developer.</li>
+<li>Uploads of documents to the developer's own servers.</li>
+</ul>
+<p>Users may enter personal information in their documents. Such information is processed and stored locally through the application's editing and storage features.</p>
+
+<h2>3. Local Document Storage</h2>
+<p>Documents are saved to the location selected by the user on their device.</p>
+<p>SintaxisMD also stores session information to restore open tabs and ongoing work.</p>
+<p>The session file may include:</p>
+<ul>
+<li>Text from open documents, including unsaved changes.</li>
+<li>File paths.</li>
+<li>Tab states and selections.</li>
+<li>Display, language and theme preferences.</li>
+<li>Window position, size and state.</li>
+</ul>
+<p>In traditional desktop installations, this file is located at:</p>
+<p><code>%APPDATA%\editor-md\session.json</code></p>
+<p>The file is stored in JSON format and is not encrypted by SintaxisMD. Its protection therefore also depends on Windows account permissions and device security.</p>
+
+<h2>4. Internet Connections and External Services</h2>
+<p>SintaxisMD's main features can be used without an Internet connection.</p>
+<p>However, external network traffic may occur in two situations:</p>
+<ul>
+<li><strong>Remote images:</strong> if a document contains an image hosted at an HTTPS address, the preview may request it from its hosting server. That server may receive the user's public IP address and ordinary technical connection information.</li>
+<li><strong>External links:</strong> when the user chooses to open an HTTP or HTTPS link, SintaxisMD passes it to the system's default browser.</li>
+</ul>
+<p>SintaxisMD does not control the privacy practices of external servers or visited websites.</p>
+
+<h2>5. Third-Party Services and Libraries</h2>
+<p>The application uses locally bundled technologies and libraries, including:</p>
+<ul>
+<li>Electron for the desktop environment.</li>
+<li>CodeMirror for text editing.</li>
+<li>Marked for Markdown processing.</li>
+<li>DOMPurify to sanitize HTML preview content.</li>
+</ul>
+<p>The code review did not identify advertising, analytics, authentication or cloud-storage SDKs.</p>
+
+<h2>6. Cookies and Web Storage</h2>
+<p>SintaxisMD's own code does not implement cookies, localStorage, sessionStorage or IndexedDB as user-data storage mechanisms.</p>
+<p>The application uses the Electron/Chromium environment. Whether its internal cache stores remote resources was not determined through dynamic testing.</p>
+
+<h2>7. Accounts, Licenses and Payments</h2>
+<p>SintaxisMD does not implement user accounts, sign-in, product-key activation, its own license validation or in-app payments.</p>
+<p>If the application is purchased through Microsoft Store, purchasing, billing and account management are handled by Microsoft and are subject to Microsoft's own policies.</p>
+
+<h2>8. Information Security</h2>
+<p>SintaxisMD includes technical safeguards such as context isolation, restricted code execution, operation validation and sanitization of preview content.</p>
+<p>However, documents and the session file are not encrypted by the application. We recommend keeping Windows up to date and protecting device access using available security features.</p>
+
+<h2>9. Data Retention and Deletion</h2>
+<p>Documents remain in the locations selected by the user until the user deletes them.</p>
+<p>SintaxisMD currently does not include an in-app feature to erase all application data.</p>
+<p>With the traditional NSIS installation, user data is retained after uninstalling. To remove it, the user must close the application and manually delete:</p>
+<p><code>%APPDATA%\editor-md</code></p>
+<p>The exact data-removal behavior when uninstalling the Microsoft Store AppX version has not been determined in this review.</p>
+<p>If documents are stored in synchronized folders, network drives or third-party services, their synchronization and retention are controlled by those external services.</p>
+
+<h2>10. Children's Privacy</h2>
+<p>SintaxisMD is a general-purpose document editing tool and is not specifically designed to collect personal information from children under 13.</p>
+<p>It does not implement age registration or specific mechanisms for collecting children's data.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>This policy may be updated when new features are introduced or the application's data practices change. The current version will be available on this page.</p>
+
+<h2>12. Contact</h2>
+<p>For questions about this Privacy Policy or information handling in SintaxisMD, please contact the owner:</p>
+<p><strong>Roman Zamora</strong><br>
+<a href="mailto:romanzamora10@hotmail.com">romanzamora10@hotmail.com</a></p>
+
+<h2>13. Scope of This Policy</h2>
+<p>This policy describes SintaxisMD features verified through a static review of its code and configuration. It does not replace the privacy policies of Microsoft Windows, Microsoft Store, browsers or external services voluntarily used by the user.</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<strong>SintaxisMD</strong><br>
+Privacy & Data Protection<br>
+© 2026 Roman Zamora
+</footer>
+
+<script>
+function setLanguage(lang) {
+  const spanish = lang === 'es';
+  document.getElementById('spanish').hidden = !spanish;
+  document.getElementById('english').hidden = spanish;
+  document.getElementById('esBtn').classList.toggle('active', spanish);
+  document.getElementById('enBtn').classList.toggle('active', !spanish);
+  document.documentElement.lang = lang;
+  document.title = spanish
+    ? 'Política de Privacidad | SintaxisMD'
+    : 'Privacy Policy | SintaxisMD';
+}
+</script>
+
+</body>
+</html>
